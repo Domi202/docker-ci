@@ -3,6 +3,7 @@ FROM php:7.1-cli-jessie
 RUN echo "jenkins:x:1000:1000::/var/jenkins_home:/bin/bash" >> /etc/passwd
 
 RUN apt-get update && apt-get install -y \
+unzip \
 wget \
 curl \
 git \
